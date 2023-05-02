@@ -7,6 +7,7 @@ export const createPlace= asyncHandler(async (req, res) => {
             title,address,description,price,
             perks,extraInfo,checkIn,checkOut,maxGuests,
           } = req.body;
+    
           const file = req.file
           const parsedFile = getDataUri(file)
           const cloud = await cloudinary.v2.uploader.upload(parsedFile.content)

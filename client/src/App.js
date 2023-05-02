@@ -1,6 +1,7 @@
 
 import './App.css';
 import img1 from "./Photos/cardImage1.png"
+import PlacesList from './components/PlacesList';
 function App() {
   return (
     <div className="container">
@@ -30,107 +31,7 @@ function App() {
       <img src="./Icons/logoName.svg" alt />
     </div>
   </main>
-  <section className="my-6">
-    <h1 className="text-black text-center">
-      Our Best Estate,<br /> are Modern
-    </h1>
-    <div className="flex flex-row justify-center items-center gap-6">
-      <div className="relative w-300">
-        <img className="card-img" src={img1} alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-      <div className="relative w-300" style={{marginTop: '5%'}}>
-        <img className="card-img" src="./Photos/cardImage2.png" alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-      <div className="relative w-300" style={{marginTop: '10%'}}>
-        <img className="card-img" src="./Photos/cardImage3.png" alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-    </div>
-    <div className="flex flex-row justify-center items-center gap-6" style={{flexDirection: 'row-reverse'}}>
-      <div className="relative w-300">
-        <img className="card-img" src="./Photos/cardImage6.png" alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-      <div className="relative w-300" style={{marginTop: '5%'}}>
-        <img className="card-img" src="./Photos/cardImage5.png" alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-      <div className="relative w-300" style={{marginTop: '10%'}}>
-        <img className="card-img" src="./Photos/cardImage4.png" alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-    </div>
-    <div className="flex flex-row justify-center items-center gap-6">
-      <div className="relative w-300">
-        <img className="card-img" src="./Photos/cardImage7.png" alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-      <div className="relative w-300" style={{marginTop: '5%'}}>
-        <img className="card-img" src="./Photos/cardImage8.png" alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-      <div className="relative w-300" style={{marginTop: '10%'}}>
-        <img className="card-img" src="./Photos/cardImage9.png" alt />
-        <div className="card-footer">
-          <div>
-            <h4 className="text-black">Mixtownia</h4>
-            <small className="text-black">$2455666</small>
-          </div>
-          <button>Detail</button>
-        </div>
-      </div>
-    </div>
-  </section>
+  <PlacesList/>
   <div className="flex flex-row justify-between text-black" style={{marginTop: '10%'}}>
     <div className="relative">
       <img style={{width: 600}} src="./Icons/featureImageBg1.svg" alt />
