@@ -1,11 +1,13 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require('cors')
+import dotenv from "dotenv";
+import express from "express";
+import cors from 'cors'
 const app = express();
+import authRoutes from "./routes/authRoutes.js"
+dotenv.config()
 app.use(cors())
 
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-module.exports = app;
+app.use("/api/v1" , authRoutes)
+export default app;
