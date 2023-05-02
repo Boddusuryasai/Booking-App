@@ -66,7 +66,6 @@ export const login = asyncHandler(async (req, res) => {
     if (!user) {
         throw new CustomError("Invalid credentials", 400)
     }
- console.log(user)
     const isPasswordMatched = await user.comparePassword(password)
 
     if (isPasswordMatched) {
