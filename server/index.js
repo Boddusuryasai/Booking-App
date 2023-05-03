@@ -7,7 +7,7 @@ import authRoutes from "./routes/authRoutes.js"
 import placeRoutes from "./routes/placeRoutes.js"
 import bookingRoutes from "./routes/bookingRoutes.js"
 dotenv.config()
-app.use(cors())
+app.use(cors({credentials:true}))
 app.use(cookieParser())
 // Middleware
 app.use(express.json());
